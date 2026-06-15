@@ -4,6 +4,10 @@ A centralized, reusable toast notification system for Salesforce Lightning Web C
 
 ---
 
+<img width="4920" height="4440" alt="Toast Notification Service - Architecture" src="https://github.com/user-attachments/assets/b71e765c-513b-4865-ba34-6fb60b658a72" />
+
+---
+
 ## Features
 
 | Feature | Detail |
@@ -230,8 +234,3 @@ npm run test:unit
 | Experience Cloud Sites | ✅ (with LMS support) |
 | API version | 61.0 (Summer '25) |
 
----
-
-## License
-
-MIT — free to use and modify in any Salesforce org.
