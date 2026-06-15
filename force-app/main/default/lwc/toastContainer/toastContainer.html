@@ -1,0 +1,22 @@
+<template>
+    <div
+        class="toast-container"
+        role="region"
+        aria-label="Notifications"
+        aria-live="polite"
+        aria-relevant="additions removals"
+    >
+        <template for:each={toasts} for:item="toast">
+            <c-toast-item
+                key={toast.id}
+                toast-id={toast.id}
+                title={toast.title}
+                message={toast.message}
+                variant={toast.variant}
+                duration={toast.duration}
+                mode={toast.mode}
+                onclosedismiss={handleClose}
+            ></c-toast-item>
+        </template>
+    </div>
+</template>

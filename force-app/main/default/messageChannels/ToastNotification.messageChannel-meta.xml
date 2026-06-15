@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>ToastNotification</masterLabel>
+    <isExposed>true</isExposed>
+    <description>Channel for broadcasting toast notifications across LWC components via Lightning Message Service</description>
+    <lightningMessageFields>
+        <fieldName>title</fieldName>
+        <description>Toast title text (optional)</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>message</fieldName>
+        <description>Toast body message (required)</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>variant</fieldName>
+        <description>Toast variant: success | error | warning | info</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>duration</fieldName>
+        <description>Auto-dismiss duration in milliseconds (default: 3000)</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>mode</fieldName>
+        <description>dismissible | sticky (sticky requires manual close)</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

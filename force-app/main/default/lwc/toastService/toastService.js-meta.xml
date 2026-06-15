@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>false</isExposed>
+    <masterLabel>Toast Service</masterLabel>
+    <description>Singleton service module for publishing toast notifications. Import and call from any LWC; not placed on pages directly.</description>
+</LightningComponentBundle>

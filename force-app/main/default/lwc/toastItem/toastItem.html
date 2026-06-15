@@ -1,0 +1,42 @@
+<template>
+    <div
+        class={computedClass}
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+    >
+        <!-- Icon -->
+        <span class="toast-icon" aria-hidden="true">
+            <lightning-icon
+                icon-name={iconName}
+                size="small"
+                alternative-text={variant}
+            ></lightning-icon>
+        </span>
+
+        <!-- Body -->
+        <div class="toast-body">
+            <template if:true={title}>
+                <p class="toast-title">{title}</p>
+            </template>
+            <p class="toast-message">{message}</p>
+        </div>
+
+        <!-- Close button -->
+        <button
+            class="toast-close"
+            onclick={handleClose}
+            aria-label="Dismiss notification"
+            title="Dismiss"
+        >
+            <lightning-icon icon-name="utility:close" size="x-small" alternative-text="Close"></lightning-icon>
+        </button>
+
+        <!-- Progress bar (hidden for sticky toasts) -->
+        <template if:false={isSticky}>
+            <div class="toast-progress-track" aria-hidden="true">
+                <div class="toast-progress-bar" style={progressStyle}></div>
+            </div>
+        </template>
+    </div>
+</template>
